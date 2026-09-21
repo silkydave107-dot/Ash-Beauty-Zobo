@@ -2,7 +2,7 @@ function sendToWhatsapp() {
   
   const phoneNumber = "2349044340511";  
   const zoboInput = document.getElementById("zoboQty").value;
-  const tigernutInput = document.getElementById("tigernutQty");
+  const tigernutInput = document.getElementById("tigernutQty").value;
   const orderType = document.getElementById("orderType").value;
   const custName = document.getElementById("custName").value;
   const custAddress = document.getElementById("custAddress").value;
@@ -15,12 +15,15 @@ function sendToWhatsapp() {
     alert("Please select at least 1 drink.");
     return; // Stop the function here
   }
-
+  
+  
   if (custName === "" || custAddress === "") {
     alert("Please fill in your Name and Address.");
     return; // Stop the function here
   } 
   
+  let textMessage = "Hello Okik Sips! I would like to place an order:\n\n";
+
   if (zoboQty > 0) {
       textMessage = textMessage + "- Zobo Drink: " + zoboQty + "\n";
     }
@@ -29,7 +32,6 @@ function sendToWhatsapp() {
         textMessage = textMessage + "- Tigernut Drink: " + tigernutQty + "\n";
     }
     
-    let textMessage = "Hello Okik Sips! I would like to place an order:\n\n";
     
   textMessage = textMessage + "\nType: " + orderType;
   textMessage = textMessage + "\nName: " + custName;
