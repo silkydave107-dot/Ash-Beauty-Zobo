@@ -1,11 +1,11 @@
 function sendToWhatsapp() {
   
   const phoneNumber = "2349044340511";  
-  const zoboInput = document.getElementById("zoboQty");
+  const zoboInput = document.getElementById("zoboQty").value;
   const tigernutInput = document.getElementById("tigernutQty");
-  const orderType = document.getElementById("orderType");
-  const custName = document.getElementById("custName");
-  const custAddress = document.getElementById("custAddress");
+  const orderType = document.getElementById("orderType").value;
+  const custName = document.getElementById("custName").value;
+  const custAddress = document.getElementById("custAddress").value;
   const zoboQty = Number(zoboInput);
   const tigernutQty = Number(tigernutInput);
 
