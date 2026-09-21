@@ -135,3 +135,19 @@ body {
 .order-btn:hover {
   background-color: #1ebc57;
 }
+
+.footer{
+    text-align: center;
+    padding: 20px 10px 30px;
+    font-size: o.85rem;
+    color: #666;
+}
+
+.footer p{
+    margin-bottom: 5px;
+}
+
+.footer span{
+    font-weight: 5px;
+    color: #333;
+}
